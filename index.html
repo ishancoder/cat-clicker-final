@@ -2,45 +2,40 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style type="text/css">
-			*{
-				margin: 0;
-				font-family: sans-serif;
-			}
-
-			.header{
-				padding:1.5em;
-				text-align: center;
-				width: 100%;
-				background-color: orange;
-				color: white;
-			}
-
 			.area{
 				width:100%;
+				position: relative;
 			}
 
-			form > input{
-				margin: 1em;
+			#catlist {
+				float:left;
+			}
+			#catlist > li > img {
+				max-width:200px;
+				max-height:200px;
+			}
+			#catarea{
+				float:right;
+				max-width:450px;
+			}
+
+			#catarea > img{
+				max-width:300px;
 			}
 		</style>
 		<title>More Cats == More Fun</title>
 	</head>
 
 	<body>
-		<div class='header'>
-			<h1>More Cats More Fun</h1>
-		</div>
-
-		<div class='header'>
-			<form>
-				<label>Name : </label><input type='text' placeholder='Meow!'/>
-				<label>Url of Image: </label><input type='url' placeholder='https://www.example.com/example.jpg'/>
-				<input type='submit' value='Add Cat!' style="width:10%;"/>
-			</form>
-		</div>
-		<hr>
 		<div class="area">
-
+			<ul id="catlist">
+				<li>Catalina <br> <img alt="Catalina" src="http://www.fndvisions.org/img/cutecat.jpg"/></li>
+				<li>Jessica <br> <img alt="Jessica" src="http://stylonica.com/wp-content/uploads/2014/03/Cute-Cats-cats-33440930-1280-800.jpg"/></li>
+				<li>Tom <br> <img alt="Tom" src="https://pbs.twimg.com/profile_images/567285191169687553/7kg_TF4l.jpeg"/></li>
+			</ul>
+			<div id="catarea">
+			</div>
 		</div>
+		<script type="text/javascript" src="js/engine.js"></script>
 	</body>
 </html>
